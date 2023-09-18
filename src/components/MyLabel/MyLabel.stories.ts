@@ -24,3 +24,24 @@ export const Basic: Story = {
     label: 'Basic Label',
   },
 };
+
+export const AllCaps: Story = {
+  args: {
+    label: 'All Caps Label',
+    allCaps: true,
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    label: 'Secondary Label',
+    color: 'text-secondary',
+  },
+};
+
+export const CustomColor: Story = {
+  args: {
+    label: 'Custom Color Label',
+    textColor: '#bc4e35',
+  },
+};
