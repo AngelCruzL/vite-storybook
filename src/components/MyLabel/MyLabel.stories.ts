@@ -9,13 +9,18 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  argTypes: {
+    size: {
+      control: 'select',
+    },
+  },
 } satisfies Meta<typeof MyLabel>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Basic: Story = {
   args: {
-    label: 'Hello World',
+    label: 'Basic Label',
   },
 };
